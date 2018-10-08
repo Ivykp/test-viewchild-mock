@@ -1,11 +1,11 @@
+import { ChildComponent } from './child/child.component';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ParentComponent } from './parent/parent.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent, ParentComponent, ChildComponent]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
